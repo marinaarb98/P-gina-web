@@ -1,0 +1,39 @@
+{
+  "name": "Distunes-C",
+  "version": "1.0.0",
+  "description": "###  1. Descargar este repositorio. ###  2. Abrir el proyecto con Visual Studio Code. ###  3. Ir a *\"Ver\"* del menú superior y seleccionar *\"Terminal integrada\"*. ###  4. Ejecutar el comando:  *npm install*.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://fernandCordon@bitbucket.org/fernandCordon/distunes-c.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/fernandCordon/distunes-c#readme",
+  "devDependencies": {
+    "autoprefixer": "^8.0.0",
+    "babel-core": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babelify": "^8.0.0",
+    "browser-sync": "^2.23.6",
+    "browserify": "^16.1.0",
+    "cssnano": "^3.10.0",
+    "gulp": "^3.9.1",
+    "gulp-buffer": "0.0.2",
+    "gulp-html-import": "0.0.2",
+    "gulp-htmlmin": "^4.0.0",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-notify": "^3.2.0",
+    "gulp-postcss": "^7.0.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-tap": "^1.0.1",
+    "gulp-uglify": "^3.0.0",
+    "node-sass": "^4.7.2",
+    "posts": "0.0.1"
+  }
+}

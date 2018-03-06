@@ -1,0 +1,43 @@
+.formulario {
+    .comment {
+        width: 290px;
+        margin-left: 15px;
+    }
+
+    .send {
+        display: flex;
+        padding: 0 0 0 150px;
+        margin-bottom: 35px;
+    }
+
+    @include if-tablet {
+        .send {
+            width: calc(30% - 4px);
+            display: flex;
+            padding: 0 10px 10px 150px;
+        }
+    }
+
+    @include if-mobile-landscape {
+        .send {
+            width: calc(30% - 4px);
+            display: flex;
+            padding: 0 10px 10px 170px;
+        }
+    }
+    
+
+    @include if-desktop {
+        .comment {
+            margin-left: 250px;
+        }
+        .send {
+            width: calc(20% - 4px);
+            display: flex;
+            padding: 0 10px 10px 160px;
+            margin-left: 170px;
+        }
+    } 
+
+}
+

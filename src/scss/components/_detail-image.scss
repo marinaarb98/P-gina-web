@@ -1,0 +1,30 @@
+.forma-imagen {
+    display: flow-root;
+    box-sizing: border-box;
+    width: calc(70% - 10px);
+    float: left;
+    padding: 7px;
+    margin: 30px 55px;
+    background: $color-grisaceo;
+    height: calc(70% -10px);
+    border-radius: 7px;
+
+    .image {
+        width: 100%;
+        border-radius: 5px;
+    }
+
+    @include if-mobile-landscape {
+        width: calc(40% - 20px);
+        margin: 30px;
+    }
+
+    @include if-tablet-portrait {
+        width: calc(40% - 20px);
+    }
+
+    @include if-tablet-landscape {
+        width: calc(27% - 20px);
+        margin: 30px 130px;
+    }
+}

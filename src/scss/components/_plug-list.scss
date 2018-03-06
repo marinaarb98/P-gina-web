@@ -1,0 +1,49 @@
+.plug-list {
+    margin-top: 0px;
+
+    .plug {
+        text-align: center;
+        box-sizing: border-box;
+        width: calc(50% - 10px);
+        float: left;
+        padding: 10px;
+        margin: 10px 5px;
+        margin-bottom: 37px;
+        background: fade-out($color-grisaceo, 0.2);
+        height: 250px;
+        max-height: 260px;
+        overflow: hidden;
+        transition: background 0.25s;
+        border-radius: 12px;
+
+        &:hover {
+            background: $color-grisaceo;
+        }
+
+        @include if-mobile-landscape {
+            width: calc(25% - 10px);
+        }
+
+        @include if-desktop {
+            width: calc(20% - 10px);
+        }        
+
+        .image {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .name {
+            font-weight: bold;
+            margin-top: 6px;
+            color: $color-fondo;
+            text-align: left;
+        }
+
+        .price {
+            margin-top: 8px;
+            color: $color-fondo;
+            text-align: right;
+        }
+    }
+}

@@ -1,0 +1,29 @@
+.web-footer {
+    box-sizing: border-box;
+    background: fade-out($color-header-footer, 0.12);
+    padding: 8px;
+    color: $color-texto;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    transition: background 0.2s;
+
+    &:hover {
+        background: $color-header-footer;
+    }
+
+    .web-title {
+        font-family: $title-font-family;
+        font-size: $font-size-large;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    a {
+        text-decoration: none;
+        color: $color-texto; 
+        padding-right: 23px;
+    }
+
+}

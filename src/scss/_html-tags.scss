@@ -1,0 +1,47 @@
+body {
+    background: $color-fondo;
+    font-family: $main-font-family;
+    font-size: $font-size-base;
+    color: $color-grisaceo;
+    padding-top: 60px;
+}
+
+form {
+    padding: 20px;
+}
+
+label,input, button {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+label {
+    font-size: $font-size-large;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+input {
+    margin: 5px 10px 15px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid $form-input-border-color; 
+    font-size: $font-size-base;
+    &:focus {
+        outline-color: $form-input-outline-color;
+    }
+}
+
+button {
+    @extend input;
+    background-color: $form-button-background-color;
+    color: $form-button-font-color;
+    font-weight: bold;
+    max-width: 70%;
+    display: flex;
+    justify-content: flex-end;
+    &:active {
+        background: lighten($form-button-background-color, 10%);
+    }
+}

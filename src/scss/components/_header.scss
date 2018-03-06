@@ -1,0 +1,56 @@
+.web-header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 3px 7px 4px 0;
+    box-sizing: border-box;
+    background: fade-out($color-header-footer, 0.12);
+    color: $color-texto;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: background 0.2s;
+
+    &:hover {
+        background: $color-header-footer;
+    }
+
+    .web-title {
+        
+        font-family: $title-font-family;
+        display: flex;
+        font-size: $font-size-h2;
+        font-weight: 300;
+        text-transform: uppercase;
+        width: 45%;
+
+        a {
+            text-decoration: none;
+            color: $color-texto;
+        }
+    }
+
+    @include if-desktop {
+        .web-title {
+            font-size: $font-size-big;
+        }
+    }
+
+    .form-search {
+        display: flex;
+        align-items: center;
+        margin-left: 13px;
+        a {
+            text-decoration: none;
+            color: $color-texto;
+        }
+        .busquedas {
+            width: 130px;
+            margin-left: 5px;
+            margin-top: 15px;
+            padding: 6px;
+            background-color: $color-texto; 
+        }
+    }
+}

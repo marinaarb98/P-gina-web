@@ -1,0 +1,69 @@
+.descriptions {
+    .other-colors {
+        display: -webkit-inline-box;
+        width: calc(30% - 10px);
+        float: initial;
+        box-sizing: border-box;
+        padding: 5px;
+
+        .plus-image {
+            width: 100%;
+            border-radius: 5px;
+        }
+    }
+
+    .data {
+        .form-name {
+            margin-top: 20px;
+            font-family: $other-font-family;
+            text-align: center;
+            font-weight: bold;
+            font-size: $font-size-h1;
+            color: $color-azulado;
+        }
+
+        .form-price {
+            text-align: right;
+            margin: 25px 40px 0 0;
+            font-weight: bold;
+            font-size: $font-size-h2;
+            text-decoration-line: underline;
+            font-family: $main-font-family;
+            color: $color-header-footer;
+        }
+
+        .form-text-plug {
+            font-weight: bold;
+            padding: 30px 40px;
+            text-align: justify;
+        }
+    }
+
+    .form-button-buy {
+        float: right;
+        padding: 0 10px 40px;
+    }
+
+    @include if-mobile-landscape {
+        .other-colors {
+            display: -webkit-inline-box;
+            width: calc(15% - 10px);
+            margin-top: 30px;
+            padding: 5px;
+        }
+    }
+
+    @include if-tablet-portrait {
+        .other-colors {
+            display: -webkit-inline-flex;
+            width: calc(55% - 10px);
+        }
+    
+    @include if-tablet-landscape {
+        .other-colors {
+            display: -webkit-inline-box;
+            width: calc(15% - 10px);
+        }
+    }
+    }
+}

@@ -1,0 +1,40 @@
+// Font families
+$main-font-family: 'Gudea', serif;
+$title-font-family: 'Orbitron', serif;
+$other-font-family: 'Fugaz One', serif;
+$body-font-family: $main-font-family;
+
+// Font sizes
+$font-size-base: 15px;
+$font-size-small: $font-size-base - 3px;
+$font-size-large: $font-size-base + 5px;
+$font-size-h1: $font-size-base + 15px;
+$font-size-h2: $font-size-base + 12px;
+$font-size-h3: $font-size-base + 9px;
+$font-size-big: $font-size-base + 20px;
+
+
+// Base colors
+$color-texto: #ffe2ff;
+$color-header-footer: #7e1288;
+$color-grisaceo: #573a5c;
+$color-azulado: #193646;
+$color-fondo: #f4eeff;
+$color-oscuro: #254468;
+
+// Main components colors
+$main-text-color: $color-grisaceo;
+
+// Responsive
+// 667 iphone landscape. 768 ipad portrait
+$mobile-portrait-width: 414px;
+$mobile-landscape-width: 767px;
+$tablet-portrait-width: $mobile-landscape-width + 1;
+$tablet-landscape-width: 1024px;
+
+// Forms variables
+$form-input-border-color: $color-header-footer;
+$form-input-outline-color: $color-header-footer;
+$form-button-background-color: $color-oscuro;
+$form-button-font-color: $color-texto;
+

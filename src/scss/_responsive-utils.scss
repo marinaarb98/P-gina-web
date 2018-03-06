@@ -1,0 +1,47 @@
+@mixin if-mobile-portrait {
+    // hasta 414
+    @media (max-width: #{$mobile-portrait-width}) {
+        @content;
+    }
+}
+
+@mixin if-mobile-landscape {
+    // de 415 en adelante
+    @media (min-width: #{$mobile-portrait-width} + 1) {
+        @content;
+    }
+}
+
+@mixin if-mobile {
+    @include if-mobile-portrait {
+        @content;
+    }
+}
+
+@mixin if-tablet-portrait {
+    // de 768 en adelante
+    @media (min-width: #{$tablet-portrait-width}) {
+        @content;
+    }
+}
+
+@mixin if-tablet-landscape {
+    // de 1024 en adelante
+    @media (min-width: #{$tablet-landscape-width}) {
+        @content;
+    }
+}
+
+@mixin if-tablet {
+    // de 768 en adelante
+    @include if-tablet-portrait {
+        @content;
+    }
+}
+
+@mixin if-desktop {
+    // de 1024 en adelante
+    @include if-tablet-landscape {
+        @content;
+    }
+}
